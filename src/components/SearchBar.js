@@ -6,6 +6,8 @@ import {searchVideo} from '../store/actions/search-video';
 export default function SearchBar() {
     const dispatch = useDispatch();
 
+    dispatch(searchVideo('Xumes Udemy'));
+
     const searchTherm = (e) => {
         if (e.keyCode === 13) {
             const therm = e.target.value;
